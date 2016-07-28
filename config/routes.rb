@@ -1,4 +1,14 @@
 Rails.application.routes.draw do
+  
+  match "/portfolio",
+  :to => "portfolio#index",
+  :via => :get
+
+
+  match "/portfolio/index",
+  :to => "portfolio#index",
+  :via => :get
+
   get 'home/index'
 
 
